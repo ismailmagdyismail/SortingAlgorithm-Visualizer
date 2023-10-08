@@ -30,6 +30,7 @@ export function selectionSort(array:number[]):animation[]{
         }
         array[mxIdx] = array[i];
         array[i] = mx;
+        animations[animations.length-1].updatedArray = [...array];
     }
     return animations || [];
 }
